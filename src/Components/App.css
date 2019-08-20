@@ -1,0 +1,201 @@
+body {
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+a {
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none !important;
+  color: white;
+}
+a:visited, a:hover, a:link, a:active
+{
+    text-decoration: none !important;
+    color:white;
+}
+span{
+  font-size: 17px;
+  font-weight: bold;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+
+div.modal-content {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+.txt {
+  position: absolute !important;
+  top:-100%; left:0; right: 0; bottom:-100%;
+  margin: auto;
+}
+
+.particles{
+  position: absolute;
+  right:0;
+  top:0;
+  height:100%;
+  width:100%;
+  z-index: -1;
+  background-image: linear-gradient(-180deg, #101427 0%, #592368 100%);
+}
+
+@keyframes focus {
+  0%   { filter: blur(20px) }
+  100% { filter: blur(0) }
+}
+
+.home-content {
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  filter: blur(20px);
+  animation: 3s ease-out .5s 1 focus;
+  /* Duration, function, delay, number of animations, and name of animation */
+  animation-fill-mode: forwards;
+}
+
+/* .home-content:hover {
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-filter: none;
+  filter: none;
+  transition: 3s;
+} */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  margin: 20px;
+}
+
+.mainbody{
+       position: relative;
+       top: 0px; /* Header Height */
+       bottom: 0px; /* Footer Height */
+       height: 100vh;
+       width: 100%;
+       z-index: 2;
+}
+.clearonclick {
+  float: left;
+  max-width: 31%;
+  position: relative;
+  margin: .5%;
+  img {
+    width: 100%;
+    margin-bottom: -4px;
+  }
+  .overlay {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    opacity: 0;
+    h2 {
+      padding-top: 20%;
+      font-family: 'Droid Serif', serif;
+    }
+    p {
+      font-family: 'Julius Sans One', sans-serif;
+    }
+  }
+  &:not(:hover) {
+    .overlay {
+      opacity: 1;
+    }
+    img {
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+    }
+  }
+}
+
+.center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Countdown {
+  margin: 10px auto;
+  padding-bottom: 20px;
+}
+
+.Countdown-col {
+  display: inline-block;
+}
+
+.Countdown-col-element {
+  display: inline-block;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Countdown-col-element strong {
+  font-size: 50px;
+}
+
+button.ui.button{
+  background-color: #592368;
+  text-decoration-color: white;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+button.ui.button:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #3b1745;
+  text-decoration-color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
