@@ -6,7 +6,7 @@ module.exports = {
   entry:'./src/index.js',
   //This property defines the file path and the file name which will be used for deploying the bundled file
   output:{
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '/build'),
     filename: 'bundle.js'
   },
   //Setup loaders
