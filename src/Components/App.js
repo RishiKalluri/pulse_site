@@ -32,8 +32,9 @@ class App extends Component {
         </Button.Group>
         </div>
       </div>
-    }
+
     )
+}
 }
 
 export default App;
