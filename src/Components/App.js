@@ -24,7 +24,7 @@ class App extends Component {
             </Button>
           </a>
           <Button.Or/>
-          <a href="https://tinyurl.com/tmprw5a">
+          <a href="https://pulse2020.typeform.com/to/Eu1RLD">
           <Button>
           Register
           </Button>
@@ -32,8 +32,8 @@ class App extends Component {
         </Button.Group>
         </div>
       </div>
+    }
     )
-  }
 }
 
 export default App;
