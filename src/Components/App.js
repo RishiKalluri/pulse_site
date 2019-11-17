@@ -14,15 +14,22 @@ class App extends Component {
     return (
       <div>
         <ParticleWrapper/>
-        <NavigationBar/>
         <div className="home-content">
           <img className="logo" src={Logo}/>
           <Countdown date={`${year}-01-25T00:00:00`} />
-          <a href="https://drive.google.com/file/d/1CCmoF_RuC-W2bVRUZGWsZsIwMsRSuZzo/view?usp=sharing">
+          <Button.Group>
+          <a href="https://drive.google.com/file/d/11Bn-4Bs34dPSCWfI1tTSn63k_EM7o7Fk/view?usp=sharing">
             <Button>
             Sponsor Us
             </Button>
           </a>
+          <Button.Or/>
+          <a href="https://tinyurl.com/tmprw5a">
+          <Button>
+          Register
+          </Button>
+          </a>
+        </Button.Group>
         </div>
       </div>
     )

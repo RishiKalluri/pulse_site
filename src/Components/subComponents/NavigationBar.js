@@ -48,6 +48,24 @@ const Menu = styled.div`
     }
     `;
 
+/*
+<ResponsiveMenu
+    menuOpenButton={<FaBars size={30}/>}
+    menuCloseButton={<FaAngleUp size={30}/>}
+    menu={
+        <div className="menuContainer">
+            <Menu className='text-right menuComponent'>
+                <ul>
+
+                        <Button>jkljk;lj</Button>
+
+                </ul>
+            </Menu>
+        </div>
+    }
+/>
+*/
+
 
 class NavigationBar extends Component {
     constructor(){
@@ -57,21 +75,7 @@ class NavigationBar extends Component {
     render() {
         return (
             <div class="overlay">
-                <ResponsiveMenu
-                    menuOpenButton={<FaBars size={30}/>}
-                    menuCloseButton={<FaAngleUp size={30}/>}
-                    menu={
-                        <div className="menuContainer">
-                            <Menu className='text-right menuComponent'>
-                                <ul>
-
-                                        <Button>jkljk;lj</Button>
-
-                                </ul>
-                            </Menu>
-                        </div>
-                    }
-                />
+              <Button>Register</Button>
             </div>
         )
     }
