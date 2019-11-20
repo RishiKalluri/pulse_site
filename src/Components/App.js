@@ -5,16 +5,18 @@ import NavigationBar from './subComponents/NavigationBar'
 import Logo from "./media/circle-cropped.png"
 import { Button } from 'semantic-ui-react'
 import './App.css';
-
+import Schedule from './subComponents/Schedule'
 
 class App extends Component {
+
   render() {
     const year = 2020;
 
     return (
-      <div>
+      <div className>
         <ParticleWrapper/>
-        <div className="home-content">
+        <Schedule></Schedule>
+        {/* <div className="home-content">
           <img className="logo" src={Logo}/>
           <Countdown date={`${year}-01-25T00:00:00`} />
           <Button.Group>
@@ -30,7 +32,7 @@ class App extends Component {
           </Button>
           </a>
         </Button.Group>
-        </div>
+        </div> */}
       </div>
 
     )
