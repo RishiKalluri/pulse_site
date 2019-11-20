@@ -1,7 +1,8 @@
 body {
   text-align: center;
   color: white;
-  overflow: hidden;
+  overflow: auto;
+  height: 100%;
 }
 a {
   font-size: 17px;
@@ -198,4 +199,9 @@ button.ui.button:hover{
   text-decoration-color: white;
   font-size: 17px;
   font-weight: bold;
+}
+
+
+.weekdays {
+  display: flex;
 }
