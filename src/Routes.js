@@ -12,14 +12,16 @@ import Contact from './Contact';
 import About from './About';
 import SponsorUs from './SponsorUs' */
 
+
 const routes = () => (
     <div>
+        <ParticleWrapper />
         <Router> {/** FIXME Refer to this later if something is broken */}
             <div class="mainbody">
-                <ParticleWrapper />
+                
                 {/* <Route exact path="/" component={App} /> */}
                 {/* <Route exact path="/register" component={Register} /> */}
-                <Route exact path="/schedule" component={Schedule} />
+                <Route exact path="/" component={Schedule} />
                 {/* REVIEW <Route path="/schedule" component={Schedule} />
                 <Route path="/events" component={Events} />
                 <Route path="/speakers" component={Speakers} />
