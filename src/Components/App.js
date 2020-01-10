@@ -16,7 +16,7 @@ class App extends Component {
         <ParticleWrapper/>
         <div className="home-content">
           <img className="logo" src={Logo}/>
-          <Countdown date={`${year}-01-25T00:00:00`} />
+          <Countdown date={`${year}-02-01T00:00:00`} />
           <Button.Group>
           <a href="https://drive.google.com/file/d/11Bn-4Bs34dPSCWfI1tTSn63k_EM7o7Fk/view?usp=sharing">
             <Button>
