@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import App from './Components/App'
 // import Register from './Components/Register'
 import Schedule from './Components/subComponents/Schedule'
-import ParticleWrapper from './Components/ParticleWrapper'
+import ParticleWrapper from './Components/subComponents/ParticleWrapper'
 /** REVIEW  import Schedule from './Schedule';
 import Events from './Events';
 import Speakers from './Speakers';
