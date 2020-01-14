@@ -53,12 +53,9 @@ div.modal-content {
 }
 
 .home-content {
-  z-index: 1;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin-top: 200px;
+  margin-left: 200px;
+  width: 100%;
   filter: blur(20px);
   animation: 3s ease-out .5s 1 focus;
   /* Duration, function, delay, number of animations, and name of animation */
@@ -201,6 +198,12 @@ button.ui.button:hover{
   font-size: 17px;
   font-weight: bold;
 }
+
+.box{
+  margin-top: 225px;
+  margin-bottom: 1000px;
+}
+
 
 
 .weekdays {
