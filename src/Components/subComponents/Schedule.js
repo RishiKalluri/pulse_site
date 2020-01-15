@@ -4,6 +4,7 @@ import { Button } from 'semantic-ui-react'
 import Sidebar from 'react-sidebar'
 import Home from "./Home"
 import Card from "./directorCards/Card"
+import Footer from "./Footer"
 
 import "./Schedule.css"
 
@@ -79,6 +80,11 @@ class Schedule extends Component {
                   <div className="box">
                     <Element name="recap">
                       <Card/>
+                    </Element>
+                  </div>
+                  <div className="footer">
+                    <Element name="footer">
+                      <Footer/>
                     </Element>
                   </div>
                 </div>
