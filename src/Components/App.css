@@ -54,7 +54,7 @@ div.modal-content {
 
 .home-content {
   margin-top: 200px;
-  margin-left: 200px;
+  margin-left: 0px;
   width: 100%;
   filter: blur(20px);
   animation: 3s ease-out .5s 1 focus;
@@ -201,10 +201,8 @@ button.ui.button:hover{
 
 .box{
   margin-top: 225px;
-  margin-bottom: 1000px;
+  margin-bottom: 100px;
 }
-
-
 
 .weekdays {
   display: flex;

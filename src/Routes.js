@@ -18,7 +18,7 @@ const routes = () => (
         <ParticleWrapper />
         <Router> {/** FIXME Refer to this later if something is broken */}
             <div class="mainbody">
-                
+
                 {/* <Route exact path="/" component={App} /> */}
                 {/* <Route exact path="/register" component={Register} /> */}
                 <Route exact path="/" component={Schedule} />

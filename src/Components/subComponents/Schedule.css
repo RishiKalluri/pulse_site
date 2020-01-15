@@ -17,3 +17,9 @@ Button {
     padding-top: 20px;
     padding-left: 10px;
 }
+
+.coming-soon {
+  font-size: 100px;
+  margin-top: -200px;
+  color: white;
+}

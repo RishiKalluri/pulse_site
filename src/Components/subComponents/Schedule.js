@@ -79,7 +79,6 @@ class Schedule extends Component {
                   <div className="box">
                     <Element name="recap">
                       <Card/>
-                      <Card/>
                     </Element>
                   </div>
                 </div>
