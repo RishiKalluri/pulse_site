@@ -4,12 +4,5 @@ Button {
 
 .scheduleSidebar {
     position: sticky;
-    /* display: flex; */
-    width: 30%;
-    height: 100%;
-    justify-content: space-evenly;
-    top: 0px;
-    background-color: #3b1745;
-    padding: 30px;
 }
   

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import { Button } from 'semantic-ui-react'
+import { Button, Menu } from 'semantic-ui-react'
 import Sidebar from 'react-sidebar'
 
 import "./Schedule.css"
@@ -22,15 +22,10 @@ class Schedule extends Component {
 
     constructor(props) {
         super(props);
-        this.scrollToTop = this.scrollToTop.bind(this);
-    }
-
-    scrollToTop() {
-        scroller.scrollToTop()
+        this.doNothing = this.doNothing.bind(this);
     }
 
     componentDidMount() {
-
         Events.scrollEvent.register('begin', function () {
           console.log("begin", arguments);
         });
@@ -40,70 +35,56 @@ class Schedule extends Component {
         });
     
     }
-
-    scrollToHeader5() {
-        scroller.scrollTo('header5', {
-            duration: 1500,
-            delay: 100,
-            smooth: true,
-            containerId: 'headers',
-            offset: 50
-        });
+    
+    doNothing() {
+        var x = 5;
     }
 
     render() {
         return (
-            <div className="weekdays">
-
-                <div className="scheduleSidebar">
-
-
-
-                    <Link activeClass="active" to="monday" spy={true} smooth={true} duration={500} offset={sidebar_size}>
-                        <Button>
-                            M
-                        </Button>
+            <div>
+                <Menu pointing inverted vertical fixed="left">
+                    <Link activeClass="active" to="monday" spy={true} smooth={true} duration={500}>
+                        <Menu.Item 
+                            name="Monday"
+                            onClick={this.doNothing}
+                        />
+                    </Link>
+                    <Link activeClass="active" to="tuesday" spy={true} smooth={true} duration={500}>
+                        <Menu.Item 
+                            name="Tuesday"
+                            onClick={this.doNothing}
+                        />
+                    </Link>
+                    <Link activeClass="active" to="wednesday" spy={true} smooth={true} duration={500}>
+                        <Menu.Item 
+                            name="Wednesday"
+                            onClick={this.doNothing}
+                        />
+                    </Link>
+                    <Link activeClass="active" to="thursday" spy={true} smooth={true} duration={500}>
+                        <Menu.Item 
+                            name="Thursday"
+                            onClick={this.doNothing}                        
+                        />
+                    </Link>
+                    <Link activeClass="active" to="friday" spy={true} smooth={true} duration={500}>
+                        <Menu.Item 
+                            name="Friday"
+                            onClick={this.doNothing}                        
+                        />
+                    </Link>
+                    <Link activeClass="active" to="saturday" spy={true} smooth={true} duration={500}>
+                        <Menu.Item 
+                            name="Saturday"
+                            onClick={this.doNothing}                        
+                        />
                     </Link>
 
-                    <Link activeClass="active" to="tuesday" spy={true} smooth={true} duration={500} offset={sidebar_size}>
-                        <Button>
-                            T
-                        </Button>
-                    </Link>
-
-
-                    <Link activeClass="active" to="wednesday" spy={true} smooth={true} duration={500} offset={sidebar_size}>
-                        <Button>
-                            W
-                        </Button>
-                    </Link>
-
-
-                    
-                    <Link activeClass="active" to="thursday" spy={true} smooth={true} duration={500} offset={sidebar_size}>
-                        <Button>
-                            Th
-                        </Button>
-                    </Link>
-                    
-
-                    
-                    <Link activeClass="active" to="friday" spy={true} smooth={true} duration={500} offset={sidebar_size}>
-                        <Button>
-                            F
-                        </Button>
-                    </Link>
-                    
-
-                    
-                    <Link activeClass="active" to="saturday" spy={true} smooth={true} duration={500} offset={sidebar_size}>
-                        <Button>
-                            S
-                        </Button>
-                    </Link>
-                    
-                </div>
+                </Menu>
                 
+                <div className="weekdays" id="weekdays">
+
                 <div>
                 <Element name="monday">
                     <h1>Monday</h1>
@@ -134,6 +115,7 @@ class Schedule extends Component {
                     <h1>Saturday</h1>
                     {big_para}
                 </Element>
+            </div>
             </div>
             </div>
         )
