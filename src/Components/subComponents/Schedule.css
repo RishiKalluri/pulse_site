@@ -6,3 +6,7 @@ Button {
     position: sticky;
 }
   
+.weekdays {
+    padding-left: 250px;
+    padding-right: 40px;
+}
