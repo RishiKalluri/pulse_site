@@ -4,7 +4,7 @@ import FIT1 from "../../media/Future_in_tech_1.JPG"
 import FIT2 from "../../media/Future_in_tech_2.JPG"
 import HW1 from "../../media/Hw_hackathon_1.JPG"
 import HW2 from "../../media/Hw_hackathon_2.JPG"
-import TI from "../../media/TI_CEO_1.JPG"
+import TI from "../../media/TI_CEO_1.jpg"
 import WIT from "../../media/WIT_1.JPG"
 
 import "./Card.css"
@@ -65,7 +65,7 @@ class Card extends Component {
             <div class="hvrbox">
               <img src={TI} alt="Mountains" class="hvrbox-layer_bottom"/>
               <div class="hvrbox-layer_top">
-                <div class="hvrbox-text">Last year, Riich Templeton, CEO of Texas Instruments spoke about TI’s rich history, and the connections between the University of Illinois, the semiconductor industry, and the bright future of TI.</div>
+                <div class="hvrbox-text">Last year, Rich Templeton, CEO of Texas Instruments spoke about TI’s rich history, and the connections between the University of Illinois, the semiconductor industry, and the bright future of TI.</div>
               </div>
             </div>
             </Grid.Column>

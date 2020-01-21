@@ -23,3 +23,12 @@ Button {
   margin-top: -200px;
   color: white;
 }
+
+.weekdays {
+  padding-left: 250px;
+  padding-right: 40px;
+}
+
+.Menu {
+  background: transparent;
+}

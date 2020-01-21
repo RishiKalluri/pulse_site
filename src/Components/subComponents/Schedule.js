@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import { Button } from 'semantic-ui-react'
+import { Menu, Button } from 'semantic-ui-react'
 import Sidebar from 'react-sidebar'
 import Home from "./Home"
 import Card from "./directorCards/Card"
@@ -8,28 +8,17 @@ import Footer from "./Footer"
 
 import "./Schedule.css"
 
-var lorem_ipsum = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui."
-var big_para =
-    <p>
-        {lorem_ipsum}
-        {lorem_ipsum}
-        {lorem_ipsum}
-        {lorem_ipsum}
-        {lorem_ipsum}
-        {lorem_ipsum}
-    </p>
-
 var sidebar_size = -83.5
 
 class Schedule extends Component {
 
     constructor(props) {
         super(props);
-        this.scrollToTop = this.scrollToTop.bind(this);
+        this.doNothing = this.doNothing.bind(this);
     }
 
-    scrollToTop() {
-        scroller.scrollToTop()
+    doNothing() {
+        var x = 0;
     }
 
     componentDidMount() {
@@ -58,18 +47,20 @@ class Schedule extends Component {
         return (
             <div className="weekdays">
 
-                <div className="scheduleSidebar">
+                <Menu pointing inverted vertical fixed="left">
                     <Link activeClass="active" to="home" spy={true} smooth={true} duration={500} offset={2.5*sidebar_size}>
-                        <Button inverted>
-                            Home
-                        </Button>
+                        <Menu.Item 
+                            name="Home"
+                            onClick={this.doNothing}
+                        />
                     </Link>
                     <Link activeClass="active" to="recap" spy={true} smooth={true} duration={500}>
-                        <Button inverted>
-                            Pulse 2019
-                        </Button>
+                        <Menu.Item 
+                            name="Pulse 2019"
+                            onClick={this.doNothing}
+                        />
                     </Link>
-                </div>
+                </Menu>
 
                 <div>
                   <div className="home-content">
